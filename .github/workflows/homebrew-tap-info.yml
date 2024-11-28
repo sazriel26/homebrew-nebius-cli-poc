@@ -1,0 +1,12 @@
+on:
+  workflow_dispatch:
+  schedule:
+    # https://crontab.guru
+    - cron: '5,35 7-16/1 * * *'
+
+jobs:
+  todo:
+    uses: sazriel26/github-actions-sandbox/.github/workflows/homebrew-tap-info.yml@main
+    with:
+      forced: false
+
