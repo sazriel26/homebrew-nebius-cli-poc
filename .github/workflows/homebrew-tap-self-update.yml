@@ -4,7 +4,12 @@ on:
   workflow_dispatch:
   schedule:
     # https://crontab.guru
-    - cron: '5,35 7-16/1 * * *'
+    # Sunday
+    - cron: '20 7-16/1 * * SUN'
+    # Monday-Thursday
+    - cron: '5,35 7-16/1 * * MON-THU'
+    # Friday
+    #- cron: '20 7-16/1 * * FRI'
 
 permissions:
   contents: write
