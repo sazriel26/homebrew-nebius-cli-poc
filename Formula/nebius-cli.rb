@@ -21,12 +21,12 @@ class NebiusCli < Formula
 
   on_linux do
     on_arm do
-      version "0.11.22" # FIXME: @github-actions-ubuntu-latest@ but not exactly
+      version "0.11.23" # FIXME: @github-actions-ubuntu-latest@ but not exactly
       url "https://storage.ai.nebius.cloud/nebius/release/#{version}/linux/arm64/nebius", using: :nounzip
     end
     on_intel do
       if Hardware::CPU.is_64_bit?
-        version "0.11.22" # FIXME: @github-actions-ubuntu-latest@
+        version "0.11.23" # FIXME: @github-actions-ubuntu-latest@
         url "https://storage.ai.nebius.cloud/nebius/release/#{version}/linux/x86_64/nebius", using: :nounzip
       end
     end
