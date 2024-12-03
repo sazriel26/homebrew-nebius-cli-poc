@@ -8,7 +8,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  delete_branch:
+  self_merge:
     uses: sazriel26/github-actions-sandbox/.github/workflows/git-merge-approved-pr.yml@main
     with:
       dry-run: false
