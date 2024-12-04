@@ -1,6 +1,6 @@
 class NebiusCli < Formula
   desc "Nebius Cloud Public CLI"
-  homepage "https://docs.nebius.ai/cli/"
+  homepage "https://docs.nebius.com/cli/"
   license :cannot_represent
 
   livecheck do
