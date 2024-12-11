@@ -4,30 +4,30 @@ class NebiusCli < Formula
   license :cannot_represent
 
   livecheck do
-    url "https://storage.eu-north1.nebius.cloud/nebius/release/stable"
+    url "https://storage.eu-north1.nebius.cloud/cli/release/stable"
     regex(/^(.+)$/i)
   end
 
   on_macos do
     on_arm do
       version "0.12.0" # @github-actions-macos-latest@
-      url "https://storage.eu-north1.nebius.cloud/nebius/release/#{version}/darwin/arm64/nebius", using: :nounzip
+      url "https://storage.eu-north1.nebius.cloud/cli/release/#{version}/darwin/arm64/nebius", using: :nounzip
     end
     on_intel do
       version "0.12.0" # FIXME: @github-actions-macos-latest@ but not exactly
-      url "https://storage.eu-north1.nebius.cloud/nebius/release/#{version}/darwin/x86_64/nebius", using: :nounzip
+      url "https://storage.eu-north1.nebius.cloud/cli/release/#{version}/darwin/x86_64/nebius", using: :nounzip
     end
   end
 
   on_linux do
     on_arm do
       version "0.12.0" # FIXME: @github-actions-ubuntu-latest@ but not exactly
-      url "https://storage.eu-north1.nebius.cloud/nebius/release/#{version}/linux/arm64/nebius", using: :nounzip
+      url "https://storage.eu-north1.nebius.cloud/cli/release/#{version}/linux/arm64/nebius", using: :nounzip
     end
     on_intel do
       if Hardware::CPU.is_64_bit?
         version "0.12.0" # FIXME: @github-actions-ubuntu-latest@
-        url "https://storage.eu-north1.nebius.cloud/nebius/release/#{version}/linux/x86_64/nebius", using: :nounzip
+        url "https://storage.eu-north1.nebius.cloud/cli/release/#{version}/linux/x86_64/nebius", using: :nounzip
       end
     end
   end
