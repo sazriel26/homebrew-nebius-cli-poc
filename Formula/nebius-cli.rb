@@ -10,23 +10,23 @@ class NebiusCli < Formula
 
   on_macos do
     on_arm do
-      version "0.12.17" # @github-actions-macos-latest@
+      version "0.12.18" # @github-actions-macos-latest@
       url "https://storage.eu-north1.nebius.cloud/cli/release/#{version}/darwin/arm64/nebius", using: :nounzip
     end
     on_intel do
-      version "0.12.17" # FIXME: @github-actions-macos-latest@ but not exactly
+      version "0.12.18" # FIXME: @github-actions-macos-latest@ but not exactly
       url "https://storage.eu-north1.nebius.cloud/cli/release/#{version}/darwin/x86_64/nebius", using: :nounzip
     end
   end
 
   on_linux do
     on_arm do
-      version "0.12.17" # FIXME: @github-actions-ubuntu-latest@ but not exactly
+      version "0.12.18" # FIXME: @github-actions-ubuntu-latest@ but not exactly
       url "https://storage.eu-north1.nebius.cloud/cli/release/#{version}/linux/arm64/nebius", using: :nounzip
     end
     on_intel do
       if Hardware::CPU.is_64_bit?
-        version "0.12.17" # FIXME: @github-actions-ubuntu-latest@
+        version "0.12.18" # FIXME: @github-actions-ubuntu-latest@
         url "https://storage.eu-north1.nebius.cloud/cli/release/#{version}/linux/x86_64/nebius", using: :nounzip
       end
     end
