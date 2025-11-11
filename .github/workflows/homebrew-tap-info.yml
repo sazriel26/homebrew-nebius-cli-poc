@@ -1,8 +1,8 @@
 on:
   workflow_dispatch:
-  schedule:
+  #schedule:
     # https://crontab.guru
-    - cron: '5 8 * * *'
+    #- cron: '5 8 * * *'
 
 jobs:
   todo:
