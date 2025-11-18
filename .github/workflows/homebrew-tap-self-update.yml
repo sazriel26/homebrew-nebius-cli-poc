@@ -3,11 +3,12 @@ name: Homebrew TAP Self update (Workflow)
 on:
   workflow_dispatch:
   schedule:
+    - cron: '20 8 * * SUN-THU'
     # https://crontab.guru
     # Sunday
-    - cron: '20 7-16/1 * * SUN'
+    #- cron: '20 7-16/1 * * SUN'
     # Monday-Thursday
-    - cron: '5,35 7-16/1 * * MON-THU'
+    #- cron: '5,35 7-16/1 * * MON-THU'
     # Friday
     #- cron: '20 7-16/1 * * FRI'
 
